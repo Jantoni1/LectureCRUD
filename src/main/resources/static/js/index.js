@@ -39,7 +39,7 @@ function addAllColumnHeaders(myList, selector) {
 }
 
 var xhttp = new XMLHttpRequest();
-xhttp.open("GET", "http://localhost:8080/lectures", false);
+xhttp.open("GET", "http://[2a02:a310:33f:aa80:a444:845c:f56c:d23d]:8080/lectures", false);
 xhttp.setRequestHeader("Content-type", "application/json");
 xhttp.send();
 var myBooks = JSON.parse(xhttp.responseText); //JSON.parse(xhttp.responseText);
