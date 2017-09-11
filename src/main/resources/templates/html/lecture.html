@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" href="add1.css">
+
+    <title>Add a lecture to DB</title>
+</head>
+<body>
+    <div id="div">
+        <!--/*@thymesVar id="lecture" type="com.example.demo.persistence.model.Lecture"*/-->
+        <form action="#" th:action="@{/lecture}" th:object="${lecture}" method="post">
+            <p>Name: <input type="text" th:field="*{name}" /></p>
+            <p>group ID: <input type="text" th:field="*{groupId}" /></p>
+            <p>Lecturer ID: <input type="text" th:field="*{lecturerId}" /></p>
+            <p>Number Of Hours: <input type="text" th:field="*{numberOfHours}" /></p>
+            <p><input type="submit" value="Submit" /></p>
+        </form>
+    </div>
+<br>
+<script type="text/javascript" src="add1.js"></script>
+</body>
+</html>
